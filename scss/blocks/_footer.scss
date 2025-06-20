@@ -7,6 +7,11 @@
     grid-template-columns: 191px 340px 1fr;
     column-gap: 129px;
     align-items: start;
+
+    @include vp-1023 {
+      grid-template-columns: 191px 1fr;
+      column-gap: 157px;
+    }
   }
 
   &__left {
@@ -88,6 +93,10 @@
     margin: 0;
     padding: 20px 0 0;
     list-style: none;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 
   &__nav-link {
@@ -97,6 +106,10 @@
 
   &__right {
     padding: 20px 40px 0 51px;
+
+    @include vp-1023 {
+      padding: 20px 0;
+    }
   }
 
   &__policy {

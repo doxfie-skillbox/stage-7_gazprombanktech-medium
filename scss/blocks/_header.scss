@@ -19,10 +19,23 @@
     border-radius: 12px;
     column-gap: 20px;
     padding: 5px;
+
+    @include vp-1023 {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
   }
 
   &__btn {
     width: 128px;
+  }
+
+  @include vp-1023 {
+    &__btn--active {
+      display: none;
+    }
   }
 
   &__language-link {
@@ -33,5 +46,9 @@
     border: 1px solid $color-hawkes-blue;
     border-radius: 12px;
     padding: 17px 22px 17px 21px;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 }

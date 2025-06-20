@@ -353,10 +353,17 @@ template {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Noto Sans", "Arial", sans-serif;
   color: #1E222E;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {
@@ -377,6 +384,11 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 100px;
+}
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
@@ -416,8 +428,21 @@ a {
        column-gap: 20px;
   padding: 5px;
 }
+@media (max-width: 1023px) {
+  .header__box {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
 .header__btn {
   width: 128px;
+}
+@media (max-width: 1023px) {
+  .header__btn--active {
+    display: none;
+  }
 }
 .header__language-link {
   outline: none;
@@ -428,6 +453,11 @@ a {
   border: 1px solid #DBDFEC;
   border-radius: 12px;
   padding: 17px 22px 17px 21px;
+}
+@media (max-width: 1023px) {
+  .header__language-link {
+    display: none;
+  }
 }
 
 .btn {
@@ -443,6 +473,11 @@ a {
   background-color: #1E222E;
   border-radius: 8px;
   cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .btn {
+    font-size: 14px;
+  }
 }
 .btn--second {
   padding: 18px;
@@ -464,6 +499,11 @@ a {
 .btn--fifth {
   color: #1E222E;
   background-color: transparent;
+}
+@media (max-width: 1023px) {
+  .btn--fifth {
+    padding: 0;
+  }
 }
 .btn--sixth {
   padding: 12px;
@@ -729,6 +769,13 @@ a {
        column-gap: 129px;
   align-items: start;
 }
+@media (max-width: 1023px) {
+  .footer__wrapper {
+    grid-template-columns: 191px 1fr;
+    -moz-column-gap: 157px;
+         column-gap: 157px;
+  }
+}
 .footer__left {
   display: flex;
   flex-direction: column;
@@ -788,12 +835,22 @@ a {
   padding: 20px 0 0;
   list-style: none;
 }
+@media (max-width: 1023px) {
+  .footer__nav-list {
+    display: none;
+  }
+}
 .footer__nav-link {
   font-size: 14px;
   line-height: 18px;
 }
 .footer__right {
   padding: 20px 40px 0 51px;
+}
+@media (max-width: 1023px) {
+  .footer__right {
+    padding: 20px 0;
+  }
 }
 .footer__policy {
   row-gap: 12px;

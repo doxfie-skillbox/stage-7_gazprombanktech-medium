@@ -12,6 +12,10 @@
   border-radius: 8px;
   cursor: pointer;
 
+  @include vp-1023 {
+    font-size: 14px;
+  }
+
   &--second {
     padding: 18px;
     font-size: 15px;
@@ -35,6 +39,10 @@
   &--fifth {
     color: $color-black-russian;
     background-color: transparent;
+
+    @include vp-1023 {
+      padding: 0;
+    }
   }
 
   &--sixth {

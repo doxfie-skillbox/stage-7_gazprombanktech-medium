@@ -3,4 +3,8 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 100px;
+
+  @include vp-1023 {
+    padding: 0 30px;
+  }
 }
