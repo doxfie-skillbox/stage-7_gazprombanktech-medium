@@ -91,6 +91,15 @@
       font-size: 18px;
       line-height: 22px;
     }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-1;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 
   &__phone-text,
@@ -120,6 +129,11 @@
 
   &__feedback-btn {
     width: 143px;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-blue-zodiac;
+    }
   }
 
   &__location {
@@ -139,6 +153,11 @@
       font-size: 12px;
       column-gap: 5px;
     }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-2;
+    }
   }
 
   &__nav-list {
@@ -157,6 +176,15 @@
   &__nav-link {
     font-size: 14px;
     line-height: 18px;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-1;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 
   &__right {
@@ -217,5 +245,14 @@
     display: flex;
     align-items: center;
     column-gap: 8px;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-black-russian;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 }

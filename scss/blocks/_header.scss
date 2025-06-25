@@ -41,11 +41,21 @@
 
   &__btn {
     width: 128px;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-4;
+    }
   }
 
-  @include vp-1023 {
-    &__btn--active {
+  &__btn--active {
+    @include vp-1023 {
       display: none;
+    }
+
+    &:hover,
+    &:focus-visible  {
+      background-color: $color-black-russian;
     }
   }
 
@@ -60,6 +70,11 @@
 
     @include vp-1023 {
       display: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-4;
     }
   }
 }
