@@ -37,6 +37,10 @@
       padding: 0;
       border: none;
     }
+
+    @include vp-767 {
+      max-width: 160px;
+    }
   }
 
   &__btn {

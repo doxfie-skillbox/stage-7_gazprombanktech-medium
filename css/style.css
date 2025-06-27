@@ -452,6 +452,11 @@ a {
     border: none;
   }
 }
+@media (max-width: 767px) {
+  .header__box {
+    max-width: 160px;
+  }
+}
 .header__btn {
   width: 128px;
 }
@@ -569,11 +574,6 @@ a {
     margin: 0 0 40px 0;
   }
 }
-@media (max-width: 767px) {
-  .hero--partners .hero__heading {
-    margin: 0;
-  }
-}
 .hero--partners .hero__btn {
   width: 258px;
 }
@@ -602,6 +602,7 @@ a {
 @media (max-width: 767px) {
   .hero__wrapper {
     flex-direction: column;
+    position: relative;
   }
 }
 .hero__content {
@@ -618,12 +619,19 @@ a {
 @media (max-width: 767px) {
   .hero__content {
     align-items: center;
-    padding: 40px 0 0;
+    padding: 40px 0 276px;
     position: relative;
+    z-index: 10;
   }
 }
 .hero__picture {
   flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .hero__picture {
+    position: absolute;
+    bottom: 0;
+  }
 }
 .hero__btn {
   width: 272px;
@@ -631,13 +639,6 @@ a {
 @media (max-width: 1023px) {
   .hero__btn {
     width: 244px;
-  }
-}
-@media (max-width: 767px) {
-  .hero__btn {
-    position: absolute;
-    top: 262px;
-    z-index: 10;
   }
 }
 .hero__btn:hover, .hero__btn:focus-visible {
@@ -676,7 +677,6 @@ a {
 }
 @media (max-width: 767px) {
   .hero__description {
-    margin: 0;
     text-align: center;
   }
 }
@@ -778,6 +778,7 @@ a {
   margin: 0 0 12px 0;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
 }
 @media (max-width: 1023px) {
   .advantages__list-heading {
@@ -859,7 +860,7 @@ a {
 }
 @media (max-width: 1023px) {
   .card-advantages--blue .card-advantages__content {
-    padding: 0;
+    padding: 30px 30px 30px 0;
   }
 }
 @media (max-width: 767px) {
@@ -914,6 +915,7 @@ a {
 }
 .card-advantages__picture {
   flex-shrink: 0;
+  margin: auto 0 0 0;
 }
 @media (max-width: 1023px) {
   .card-advantages__image {
